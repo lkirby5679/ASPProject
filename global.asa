@@ -1,0 +1,88 @@
+<SCRIPT LANGUAGE="VBScript" RUNAT="Server">
+''*******************************************************************************************
+'' Transworld Interactive Projects - Version 2.7.2
+'' Written by Professor L. T. Kirby - Copyright 1998-2011 (c) Professor L. T. Kirby, Transworld Interactive. All Rights Reserved.
+'' This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 2.5 License. 
+'' To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ 
+'' or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+'' All Copyright notices MUST remain in place at ALL times.
+''******************************************************************************************** 
+'------------------------------------------------------------------------>
+'-- DiggerSolutions Intranet Application
+'-- Global.ASA
+'--
+'--	Purpose:	This is the initialization file for DiggerSolutions Intranet  
+'--				
+'--	Outputs:	Application connection variables
+'--	Inputs:	        None
+'------------------------------------------------------------------------>
+Sub Session_OnStart
+End Sub
+
+
+Sub Application_OnStart
+'------------------------------------------------------------------------>
+'Please note that Application Variables are global to all users because of 
+'this the web site or in this case Application does not re-read these values 
+'every time a user logs in. Why do you care about this, well if you change a 
+'value here it will not take effect until all users are off the web site.  
+'The Application section of the global.asa will then be re-read when a 
+'new user logs in.
+'If you have trouble getting an updated Application variable to take effect
+'Stop and Start your IIS server.
+'------------------------------------------------------------------------>
+
+'=============================================
+'The variables in the below block are used to set the standard permissions for 
+'each new employee you add.  For example let's say that for each new employee 
+'you want them to have the right to add Discussion Forum messages  you would 
+'set the Application variable blnpermForumAdd to 1 so when you add
+'a new employee he/she will have that right.  This does not affect previous employees
+'By default all new employees added will have No rights to do 
+'anything unless you change them here.  But be careful as changeing the 
+'wrong item can give them too many rights.
+ Application("blnpermAll") 					= 0
+ Application("blnpermAdminAll") 			= 0
+ Application("blnpermAdmin") 				= 0
+ Application("blnpermAdminCalendar")		= 0
+ Application("blnpermAdminDatabaseSetup") 	= 0
+ Application("blnpermAdminEmployees") 		= 0
+ Application("blnpermAdminEmployeesPerms") 	= 0
+ Application("blnpermAdminFileRepository") 	= 0
+ Application("blnpermAdminForum") 			= 0
+ Application("blnpermAdminNews") 			= 0
+ Application("blnpermAdminResources")		= 0 
+ Application("blnpermAdminSurveys") 		= 0
+ Application("blnpermAdminThoughts") 		= 0
+ Application("blnpermClientsAdd") 			= 0
+ Application("blnpermClientsEdit") 			= 0
+ Application("blnpermClientsDelete") 		= 0
+ Application("blnpermProjectsAdd") 			= 0
+ Application("blnpermProjectsEdit") 		= 0
+ Application("blnpermProjectsDelete") 		= 0
+ Application("blnpermTasksAdd") 			= 0
+ Application("blnpermTasksEdit") 			= 0
+ Application("blnpermTasksDelete") 			= 0
+ Application("blnpermTimecardsAdd") 		= 0
+ Application("blnpermTimecardsEdit") 		= 0
+ Application("blnpermTimecardsDelete") 		= 0
+ Application("blnpermTimesheetsEdit") 		= 0
+ Application("blnpermForumAdd") 			= 0
+ Application("blnpermRepositoryAdd") 		= 0
+ Application("blnpermPTOAdmin")             = 0 
+'End of New Employee default Permissions section
+'==============================================
+
+End Sub
+
+
+
+'EventName               Description
+
+'Session_OnStart      Runs the first time a user runs any page in your application
+	
+'Session_OnEnd       Runs when a user's session times out or quits your application
+
+' 
+
+</SCRIPT>

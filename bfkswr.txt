@@ -1,0 +1,1 @@
+name=Transworld&name2=Interactive&slogan=Putting together the pieces&button1=CORPORATE HQ&button2=USER PORTAL&button3=SOLUTIONS&button4=HELP DESK&button5=CONTACTS&rep=replay&url1=http://www.transworldinteractive.net&url2=http://www.portal.transworldinteractive.net&url3=#&url4=http://support.transworldinteractive.net&url5=contacts.html&enddata=1
