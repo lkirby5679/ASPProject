@@ -95,7 +95,7 @@ version 2.5.0 - 7/18/2002
 	- updated the /admin/default.asp page to have links to the different view and export pages
 	- added the folder /admin/exports
 	- added the following pages to the /admin/exports folder: calendar.asp, clients.asp, employees.asp, news.asp, projects.asp, tasks.asp, timecards.asp, and variable.asp
-- added abilty to report by reconciled timecards to "Work Log Internal" and "Work Log for Client"
+- added ability to report by reconciled timecards to "Work Log Internal" and "Work Log for Client"
 	- made updates to the /reports/ client_work_log.asp, client_work_log_for_client.asp, client_work_log_results.asp, and client_work_log_results_for_client.asp pages
 
 
